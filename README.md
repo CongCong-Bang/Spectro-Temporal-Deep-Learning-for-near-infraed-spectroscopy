@@ -6,15 +6,21 @@ This repository provides sample code; running steps 1-8 sequentially will help y
 
 Spectro-Temporal-Deep-Learning requires following dependencies to be installed:
 
-- [PyTorch](https://pytorch.org) >=2.0.0
-- [PyTorch Lightning](https://lightning.ai/) >= 2.0.0
-- [Hydra](https://hydra.cc/docs/intro/) >= 1.3
+- numpy == 2.1.3
+- matplotlib == 3.10.1
+- matplotlib-inline == 0.1.6
+- scikit-learn == 1.6.1
+- scipy == 1.15.2
+- joblib == 1.4.2
+- torch == 2.7.0
+- torchvision == 0.22.0
+- shap == 0.47.2
 
 If you intend to introduce new functionalities or make code modifications, we suggest duplicating the repository and setting up a local installation:
 
 ```bash
-git clone https://github.com/CongCong-Bang/Spectro-Temporal-Deep-Learning-for-near-infrared-spectroscopy
-cd Spectro-Temporal-Deep-Learning-for-near-infrared-spectroscopy
+[git clone https://github.com/CongCong-Bang/Spectro-Temporal-Deep-Learning-for-near-infrared-spectroscopy](https://github.com/CongCong-Bang/Spectro-Temporal-Deep-Learning-for-near-infraed-spectroscopy)
+cd Spectro-Temporal-Deep-Learning-for-near-infraed-spectroscopy
 
 # [OPTIONAL] create conda environment
 conda create -n STDL python=3.10
@@ -46,7 +52,7 @@ This is a foolproof, step-by-step tutorial.
 
 (7) Refer to the step7_2D_deeplearning_with_timestamp&spectral_downsampling. Enter the subfolder data_preparation, run dataset_split_time_window.py. The t_idx was set to 4, with the window length set to 9. Then enter the subfolder CNN_CNN_timestamp&spectral_downsampling and run CNN_CNN_.25.py, CNN_CNN_.50.py, and CNN_CNN_.100.py in sequence to evaluate the model performance at spectral down-sampling fractions of 0.25, 0.5, and 1, respectively;
 
-(8) Refer to the step8_DeepSHAP. Enter CNN_CNN_timestamp&spectral_downsampling and run CNN_CNN.py and data_for_temporal_analysis.py in sequence. Then enter DeepSHAP and run deepshap.py to visualize the most influential features spanning both the spectral and temporal domains.
+(8) Refer to the step8_DeepSHAP. Enter CNN_CNN_timestamp and run CNN_CNN.py and data_for_temporal_analysis.py in sequence. Then enter DeepSHAP and run deepshap.py to visualize the most influential features spanning both the spectral and temporal domains.
 
 ## Contributing
 
