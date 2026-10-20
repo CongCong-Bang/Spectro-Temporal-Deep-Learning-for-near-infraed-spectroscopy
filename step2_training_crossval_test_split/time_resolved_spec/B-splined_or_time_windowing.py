@@ -2,6 +2,7 @@ import os
 import numpy as np
 from scipy import interpolate
 import matplotlib.pyplot as plt
+from pathlib import Path
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 
@@ -13,6 +14,8 @@ win_width=9
 rootdir1=r'../../step0_raw_data'
 rootdir2=r'../../step2_training_crossval_test_split/time_resolved_spec/plot'
 rootdir3=r'../../step2_training_crossval_test_split/time_resolved_spec'
+path=Path(rootdir2)
+path.mkdir(parents=True, exist_ok=True)
 spec_data=np.load(os.path.join(rootdir1,'spec_data.npy'))
 content_data=np.load(os.path.join(rootdir1,'content_data.npy'))
 tdim_data=np.load(os.path.join(rootdir1,'time_stamp_1.npy'))
