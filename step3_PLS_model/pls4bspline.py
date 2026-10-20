@@ -37,7 +37,7 @@ test_Y=test_Y.reshape(test_Y.shape[0]*test_Y.shape[1],test_Y.shape[2])
 #Three-fold cross-validation
 #1:represents 1 bioactive compound;3:3-fold cross-validation;7:the number of latent variables,rmse_c,r2_c,rmse_cv,r2_cv,rmse_t,r2_t
 sta=np.zeros((1,3,8)) 
-n_components=np.arange(1,50)
+n_components=np.arange(1,30)
 for i in range(1):
     index,temp_sta=0,np.zeros((3,8)) 
     kfold=KFold(n_splits=3) 
