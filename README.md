@@ -19,8 +19,8 @@ Spectro-Temporal-Deep-Learning requires following dependencies to be installed:
 If you intend to introduce new functionalities or make code modifications, we suggest duplicating the repository and setting up a local installation:
 
 ```bash
-[git clone https://github.com/CongCong-Bang/Spectro-Temporal-Deep-Learning-for-near-infrared-spectroscopy](https://github.com/CongCong-Bang/Spectro-Temporal-Deep-Learning-for-near-infraed-spectroscopy)
-cd Spectro-Temporal-Deep-Learning-for-near-infraed-spectroscopy
+[git clone https://github.com/CongCong-Bang/Spectro-Temporal-Deep-Learning-for-near-infrared-spectroscopy](https://github.com/CongCong-Bang/Spectro-Temporal-Deep-Learning-for-near-infrared-spectroscopy)
+cd Spectro-Temporal-Deep-Learning-for-near-infrared-spectroscopy
 
 # [OPTIONAL] create conda environment
 conda create -n STDL python=3.10
