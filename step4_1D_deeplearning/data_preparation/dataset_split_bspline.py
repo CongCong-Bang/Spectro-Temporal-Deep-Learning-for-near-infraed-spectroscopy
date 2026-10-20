@@ -1,5 +1,4 @@
 import numpy as np
-import pandas as pd
 import os
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from joblib import dump, load
