@@ -13,7 +13,6 @@ matplotlib.rc("font", family='Microsoft YaHei')
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 import os
-from thop import profile,clever_format
 
 #(*1) Define the model structure
 class LSTMModel(nn.Module):
